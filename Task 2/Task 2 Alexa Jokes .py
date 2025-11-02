@@ -5,7 +5,7 @@ import random
 
 
 #create a file path 
-FILE_PATH = '/Users/amir/Dropbox/Mac/Documents/➡️➡️➡️➡️School Works (META) 🏫/LEVEL 5/Semester 1/Advanced Programming /ASSESMENT 1 WORKS /Assessment 1 works/randomJokes copy.txt'
+FILE_PATH = 'randomJokes-copy.txt'
 
 #create a function to open the file and read it
 def openFile():
