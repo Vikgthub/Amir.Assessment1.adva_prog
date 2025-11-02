@@ -159,7 +159,7 @@ scoreLabel.place(x=49, y=308)
 restartButton = Button(root, text="Restart", command=restart)
 restartButton.place(x=176, y=364)
 
-#end the loop
+
 root.mainloop()
 
 
