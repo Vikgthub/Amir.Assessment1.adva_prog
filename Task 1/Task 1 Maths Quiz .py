@@ -1,19 +1,13 @@
 
-
 #import tkinter and random
 from tkinter import *
 from random import randint, choice
 
 
-
-#fix the window size 
+#fix the window
 root = Tk()
 root.geometry("440x440")
 root.title("Maths Quiz")
-
-
-
-
 
 #create your variablens (for the question,answer,user's answer, the score, question number, difficulty level)
 question = StringVar()
@@ -26,7 +20,6 @@ difficulty = StringVar(value="Easy")
 questionLabel = None
 resultLabel = None
 scoreLabel = None
-
 
 
 #define a function to generate questions
@@ -59,7 +52,6 @@ def generateQuestion():
     question.set(str(number1) + operator + str(number2))
 
 
-
     #remove the old question and give the second question
     if questionLabel:
         questionLabel.destroy()
@@ -67,7 +59,6 @@ def generateQuestion():
     #display the question
     questionLabel = Label(root, text=f"Question {questionNUM.get()}: {question.get()}")
     questionLabel.place(x=49, y=180)
-
 
 
 
@@ -114,6 +105,8 @@ def checkAnswer():
     #otherwise end the questions
     else:
         resultLabel.config(text=f"Quiz Over! Final Score: {score.get()}")
+
+
 
 
 #define another function to restart the quiz...
@@ -168,8 +161,6 @@ restartButton.place(x=176, y=364)
 
 #end the loop
 root.mainloop()
-
-
 
 
 
